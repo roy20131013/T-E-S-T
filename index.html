@@ -1,0 +1,16 @@
+<body>
+    <div class="area" id="area"></div>
+  </body>
+
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+  <script>
+    turnstile.ready(function () {
+    turnstile.render('#area', {
+        sitekey: '0x4AAAAAABwPZ6hggkVfMW-x
+',
+        callback: function(token) {
+          console.log(`Challenge Success ${token}`);
+        },
+      });
+    });
+  </script>
